@@ -1,0 +1,44 @@
+html {
+  height: 100%;
+}
+.chart_card {
+  background-color: transparent !important;
+  padding: 5px !important;
+}
+.stock_chart,
+.stock_chart1,
+.stock_chart2 {
+  height: 25%;
+  width: 100%;
+  padding: 2%;
+  margin: 2% 0;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock_chart {
+  background: linear-gradient(to right, #33ccff 10%, #cc0000 79%);
+}
+.stock_chart1 {
+  background: linear-gradient(to right, #33ccff 10%, #0000ff 79%);
+}
+.stock_chart2 {
+  background: linear-gradient(to right, #33ccff 10%, #000066 79%);
+}
+.squer_big {
+  background-color: #e8ebed;
+  width: 100%;
+  height: 80%;
+}
+.squer_item {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  gap: 3.8%;
+}
+.squer_item > div {
+  width: 30%;
+  height: 100%;
+  background-color: #e8ebed;
+}

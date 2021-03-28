@@ -1,5 +1,4 @@
-
-import React,{Component} from "react"
+import React, { Component } from "react";
 import "../../Styles/SidePopup.css";
 import { useState } from "react";
 import { FaPlus } from "react-icons/fa";
@@ -9,7 +8,7 @@ import { FiPrinter } from "react-icons/fi";
 import { FaStarOfLife } from "react-icons/fa";
 import styled from "styled-components";
 import { CalendarOutlined } from "@ant-design/icons";
-import{
+import {
   Table,
   Card,
   Row,
@@ -131,8 +130,7 @@ class SidePuPop extends Component {
           className="SideModal"
           ref={(nods) => {
             this.nods = nods;
-          }}
-        >
+          }}>
           <div className="Modal_inner_content">
             <div className="sideNav_content">
               <p style={{ fontSize: "19px" }}> New Receipt</p>
@@ -141,8 +139,7 @@ class SidePuPop extends Component {
                   display: "flex",
 
                   gap: "20px",
-                }}
-              >
+                }}>
                 <u style={{ color: "#90baff" }}>Change to Invoice</u>{" "}
                 <p>
                   {" "}
@@ -151,6 +148,7 @@ class SidePuPop extends Component {
                     fontSize="20px"
                     margin="10px"
                     color="rgb(161, 158, 158)"
+                    onClick={this.props.handleClose}
                   />
                 </p>
               </span>
@@ -161,16 +159,14 @@ class SidePuPop extends Component {
                 flex: "1 1 100px",
                 display: "flex",
                 flexDirection: "column",
-              }}
-            >
+              }}>
               <Col
                 style={{
                   padding: "15px 40px",
 
                   display: "flex",
                   flexDirection: "column",
-                }}
-              >
+                }}>
                 <p style={{ fontSize: "16px" }}>Costumer Info</p>
                 <Row style={{ width: "100%" }}>
                   <Row1>
@@ -218,7 +214,10 @@ class SidePuPop extends Component {
                         }}
                       />
                     </RowItem>
-                  </Row1>
+                  </Row1>{" "}
+                  <br />
+                  <br />
+                  <br />
                   <Row2>
                     <RowItem>
                       <span>Birth Date </span>
@@ -251,8 +250,7 @@ class SidePuPop extends Component {
 
                   display: "flex",
                   flexDirection: "column",
-                }}
-              >
+                }}>
                 <p style={{ fontSize: "15px" }}>Items List</p>
                 <Table
                   columns={columns}
@@ -281,8 +279,7 @@ class SidePuPop extends Component {
                   height: "10%",
                   gap: "10px",
                   justifyContent: "flex-end",
-                }}
-              >
+                }}>
                 <FiPrinter
                   color="#d6d9db"
                   size={21}

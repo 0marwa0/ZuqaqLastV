@@ -172,7 +172,6 @@ class SidePuPop extends Component {
                   style={{
                     width: "100%",
                     display: "flex",
-                    gap: "20px",
                     flexDirection: "row",
                   }}>
                   <Row1>

@@ -220,31 +220,31 @@ class SidePuPop extends Component {
                       />
                     </RowItem>
                   </Row1>
-                  <Row2>
-                    <RowItem>
-                      <span>Birth Date </span>
-                      <Input
-                        addonAfter={<CalendarOutlined />}
-                        onChange={this.onChange}
-                        style={{
-                          borderRadius: "7px",
-                          border: "1px solid #e8ebed",
-                          backgroundColor: "red",
-                        }}
-                      />
-                    </RowItem>
-                    <RowItem>
-                      <span>Address</span>
-                      <Input
-                        placeholder="Write customer address"
-                        style={{
-                          borderRadius: "7px",
-                          border: "1px solid #e8ebed",
-                        }}
-                      />
-                    </RowItem>
-                  </Row2>
-                </Row>
+                </Row>{" "}
+                <Row2>
+                  <RowItem>
+                    <span>Birth Date </span>
+                    <Input
+                      addonAfter={<CalendarOutlined />}
+                      onChange={this.onChange}
+                      style={{
+                        borderRadius: "7px",
+                        border: "1px solid #e8ebed",
+                        backgroundColor: "red",
+                      }}
+                    />
+                  </RowItem>
+                  <RowItem>
+                    <span>Address</span>
+                    <Input
+                      placeholder="Write customer address"
+                      style={{
+                        borderRadius: "7px",
+                        border: "1px solid #e8ebed",
+                      }}
+                    />
+                  </RowItem>
+                </Row2>
               </Col>
               <Col
                 style={{

@@ -168,7 +168,13 @@ class SidePuPop extends Component {
                   flexDirection: "column",
                 }}>
                 <p style={{ fontSize: "16px" }}>Costumer Info</p>
-                <Row style={{ width: "100%" }}>
+                <Row
+                  style={{
+                    width: "100%",
+                    display: "flex",
+                    gap: "20px",
+                    flexDirection: "row",
+                  }}>
                   <Row1>
                     <RowItem>
                       <span>
@@ -214,10 +220,7 @@ class SidePuPop extends Component {
                         }}
                       />
                     </RowItem>
-                  </Row1>{" "}
-                  <br />
-                  <br />
-                  <br />
+                  </Row1>
                   <Row2>
                     <RowItem>
                       <span>Birth Date </span>

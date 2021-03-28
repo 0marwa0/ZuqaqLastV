@@ -1,6 +1,6 @@
 import { Button, Checkbox } from "antd";
 import { Typography } from "antd";
-import SidePuPop from "../components/sidePoup";
+import Emp from "../components/sidePoup/newEmp";
 import { PlusOutlined, UpOutlined } from "@ant-design/icons";
 import Title from "antd/lib/skeleton/Title";
 import { useState } from "react";
@@ -220,6 +220,7 @@ const Employes = () => {
             }}></Col>
         </Row>
       </div>
+      {show ? <Emp handleClose={showPopup} /> : null}
     </div>
   );
 };
